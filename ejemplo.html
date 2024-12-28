@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>jocarsa.steelblue - Convertidor de Markdown a HTML</title>
+    <link rel="stylesheet" href="jocarsa | steelblue.css">
+</head>
+<body>
+    <h1>Convertidor de Markdown a HTML</h1>
+    <button onclick="convertirMarkdown()">Convertir</button>
+    <div id="content"></div>
+
+    <!-- Incluir la librería JavaScript -->
+    <script src="jocarsa | steelblue.js"></script>
+    <script>
+        function convertirMarkdown() {
+            const md = `
+# Título Principal
+
+Este es un párrafo con **texto en negrita** y *texto en cursiva*.
+
+## Subtítulo
+
+- Elemento de lista 1
+- Elemento de lista 2
+- Elemento de lista 3
+
+[Enlace a OpenAI](https://www.openai.com)
+
+> Esta es una cita destacada.
+
+![Imagen de ejemplo](https://via.placeholder.com/150)
+
+`;
+
+            // Crear una instancia de la clase MarkdownToHtml
+            const converter = new jocarsa.steelblue.MarkdownToHtml();
+            // Convertir el texto Markdown a HTML
+            const html = converter.convert(md);
+            // Insertar el HTML convertido en el contenedor
+            document.getElementById('content').innerHTML = html;
+        }
+
+        // Opcional: Convertir automáticamente al cargar la página
+        window.onload = convertirMarkdown;
+    </script>
+</body>
+</html>
+

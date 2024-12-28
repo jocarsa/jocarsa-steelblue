@@ -1,0 +1,103 @@
+/* css/styles.css */
+
+/* Definición de variables de color */
+:root {
+    --color-primary: #4682B4; /* SteelBlue */
+    --color-secondary: #5A9BD5; /* Complementario */
+    --color-accent: #2A6496; /* Para resaltar elementos */
+    --color-background: #F5F5F5; /* Fondo general */
+    --color-text: #2F4F4F; /* Color del texto */
+    --color-border: #D3D3D3; /* Bordes */
+}
+
+/* Estilos generales */
+body {
+    background-color: var(--color-background);
+    color: var(--color-text);
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    margin: 0;
+}
+
+/* Contenedor del contenido convertido */
+#content {
+    border: 1px solid var(--color-primary);
+    padding: 20px;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para encabezados */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--color-primary);
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+/* Estilos para párrafos */
+p {
+    line-height: 1.6;
+    margin-bottom: 1em;
+}
+
+/* Estilos para enlaces */
+a {
+    color: var(--color-primary);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--color-accent);
+    text-decoration: underline;
+}
+
+/* Estilos para imágenes */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 3px;
+}
+
+/* Estilos para listas */
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 1em;
+}
+
+li {
+    margin-bottom: 0.5em;
+}
+
+/* Estilos para blockquotes */
+blockquote {
+    border-left: 4px solid var(--color-secondary);
+    padding-left: 15px;
+    color: var(--color-secondary);
+    margin: 1em 0;
+    background-color: #f9f9f9;
+}
+
+/* Estilos para botones */
+button {
+    background-color: var(--color-primary);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--color-accent);
+}
+
+/* Estilos para imágenes y videos responsivos */
+img, video {
+    max-width: 100%;
+    height: auto;
+}
+
